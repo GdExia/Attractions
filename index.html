@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attractions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <div class="header-right">
+        <a href="index.html">
+            <img src="p2.jpg" 
+            alt="Profile Picture" 
+            
+            
+            
+            
+            
+            
+            
+            width="200" >
+        </a>
+    </div>
+    <h1>วันหยุดยาวขอพักผ่อนหน่อย</h1>
+</header>
+
+<div class="container">
+    <div class="place">
+        <a href="./p1.html"><p class="1"><line</p></a>
+        <a href="./p1.html"><img src="p1.jpg"alt="pae"></a>
+        <h3>สถานที่ 1</h3>
+        <p>วันหยุดก็ต้องไปแตะบอลซะหน่อย </p>
+    </div>
+    <div class="place">
+        <a href="./p2.html"><p class="1"><line</p></a>
+        <a href="./p2.html"><img src="p3.jpg"alt="pae"></a>
+        <h3>สถานที่ 2</h3>
+        <p>หาเวลาไปดูหนังกับน้องสาวดีกว่า</p>
+    </div>
+    <div class="place">
+        <a href="./p3.html"><p class="1"><line</p></a>
+        <a href="./p3.html"><img src="p4.jpg"alt="pae"></a>
+        <h3>สถานที่ 3</h3>
+        <p>ไปซื้อของเล่นและไปดูของเล่นยตัวใหม่กัน</p>
+    </div>
+    <div class="place">
+        <a href="./p4.html"><p class="1"><line</p></a>
+        <a href="./p4.html"><img src="p5.jpg"alt="pae"></a>
+        <h3>สถานที่ 4</h3>
+        <p>ไปหาอะไรกินในห้างกันครับ</p>
+    </div>
+    <div class="place">
+        <a href="./p5.html"><p class="1"><line</p></a>
+        <a href="./p5.html"><img src="p6.jpg"alt="pae"></a>
+        <h3>สถานที่ 5</h3>
+        <p>กินไก่ทอดกันครับ</p>
+    </div>
+    <div class="place">
+        <a href="./p6.html"><p class="1"><line</p></a>
+        <a href="./p6.html"><img src="p7.jpg"alt="pae"></a>
+        <h3>สถานที่ 6</h3>
+        <p>ไปซื้อของทำงานให้ที่บ้าน</p>
+    </div>
+    <div class="place">
+        <a href="./p7.html"><p class="1"><line</p></a>
+        <a href="./p7.html"><img src="p8.jpg"alt="pae"></a>
+        <h3>สถานที่ 7</h3>
+        <p>ไปซิ้อของเข้าบ้านกันครับ</p>
+    </div>
+    <div class="place">
+        <a href="./p8.html"><p class="1"><line</p></a>
+        <a href="./p8.html"><img src="p9.jpg"alt="pae"></a>
+        <h3>สถานที่ 8</h3>
+        <p>วันหยุดกลับต่างจังหวัด</p>
+    </div>
+    <div class="place">
+        <a href="./p9.html"><p class="1"><line</p></a>
+        <a href="./p9.html"><img src="p10.jpg"alt="pae"></a>
+        <h3>สถานที่ 9</h3>
+        <p>ไปไหว้พระที่วัดต่างจังหวัด</p>
+    </div>
+</div>
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <p id="modalDescription"></p>
+    </div>
+</div>
+
+<script>
+    function openModal(title, description) {
+        document.getElementById('modalTitle').innerText = title;
+        document.getElementById('modalDescription').innerText = description;
+        document.getElementById('myModal').style.display = "block";
+    }
+
+    function closeModal() {
+        document.getElementById('myModal').style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == document.getElementById('myModal')) {
+            closeModal();
+        }
+    }
+</script>
+<footer>
+    <p>Attractions</p>
+</footer>
+</body>
+</html>
